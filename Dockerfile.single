@@ -1,0 +1,33 @@
+# Single Container Approach (NOT RECOMMENDED for production)
+# This example shows why separating concerns is better
+
+# Use Ubuntu as base
+FROM ubuntu:22.04
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    openjdk-17-jdk \
+    nodejs \
+    npm \
+    mongodb \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy entire project
+COPY . .
+
+# Build frontend
+RUN cd client && npm install && npm run build
+
+# Build backend
+RUN cd Medical-Store-Backend && mvn clean package -DskipTests
+
+# Expose multiple ports (not ideal)
+EXPOSE 3000 8080 27017
+
+# Start all services (using a process manager would be better in real scenario)
+CMD service mongod start && \
+    cd Medical-Store-Backend && java -jar target/*.jar & \
+    cd client && npm start
