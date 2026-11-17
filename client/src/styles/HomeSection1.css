@@ -1,0 +1,154 @@
+#homeSection1Main {
+    padding: 4rem 0 3rem 0;
+}
+
+#homeSection1MainFirst {
+    padding: 0 13rem;
+}
+
+#homeSection1MainFirst div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(65, 65, 65);
+}
+
+#homeSection1MainFirst div h2 span {
+    color: red;
+}
+
+#homeSection1MainFirstUpload {
+    margin-left: 1rem;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+#homeSection1MainSecond {
+    display: flex;
+    justify-content: center;
+    padding: 0 13rem;
+    margin-top: 1rem;
+}
+
+#homeSection1MainSecond div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.587);
+    border-radius: 20px;
+}
+
+#homeSection1MainSecond div input {
+    font-size: 21px;
+    padding: 10px 2rem 10px 1rem;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+#homeSection1MainSecond div #homeSection1MainSecondSearchIcon {
+    color: rgb(252, 109, 109);
+    font-size: 30px;
+}
+
+#homeSection1MainSecond div button {
+    font-size: 20px;
+    padding: 9px 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+#homeSection1MainSecond div button:hover {
+    background-color: rgb(116, 36, 36);
+}
+
+#homeSection1MainThird {
+    margin-top: 2rem;
+    padding: 0 6rem;
+}
+
+@media (max-width: 782px) and (min-width: 540px) {
+    #homeSection1MainFirst {
+        padding: 0 2rem;
+    }
+
+    #homeSection1MainFirst div div {
+        display: none;
+    }
+
+    #homeSection1MainSecond {
+        padding: 0 2rem;
+    }
+
+    #homeSection1MainThird {
+        padding: 0 2rem;
+    }
+
+
+}
+
+@media (max-width: 539px) and (min-width: 200px) {
+    #homeSection1MainFirst {
+        padding: 0 1rem;
+    }
+
+    #homeSection1MainFirst div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    #homeSection1MainFirst div h2 {
+        font-size: 1.5rem;
+    }
+
+    #homeSection1MainSecond {
+        padding: 0 1rem;
+    }
+
+    #homeSection1MainSecond div input {
+        font-size: 16px;
+        padding: 8px 1rem;
+    }
+
+    #homeSection1MainSecond div button {
+        font-size: 16px;
+        padding: 8px 1rem;
+    }
+
+    #homeSection1MainThird {
+        padding: 0 1rem;
+    }
+
+    #homeSection1MainThirdBox {
+        flex-direction: column;
+    }
+}
+
+#searchStore {
+    padding: 2rem;
+    min-height: 50vh;
+}
+
+#searchStore > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #searchStore {
+        padding: 1rem;
+    }
+
+    #searchStore > div {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,10 @@
+name,brand,composition,description,price,available,substitutes
+Dolo 650,Micro Labs,Paracetamol 650mg,Used for fever and mild pain,30.00,true,"Crocin 650, Calpol 650"
+Crocin 650,GSK,Paracetamol 650mg,Paracetamol tablet for fever,32.50,true,"Dolo 650, Calpol 650"
+Calpol 650,GSK,Paracetamol 650mg,Fever and pain relief,28.00,false,"Dolo 650, Crocin 650"
+Azithral 500,Alembic,Azithromycin 500mg,Antibiotic for bacterial infections,119.00,false,"Azee 500, Azithro 500"
+Azee 500,Cipla,Azithromycin 500mg,Macrolide antibiotic,108.00,true,"Azithral 500, Azithro 500"
+Pantop 40,Aristo,Pantoprazole 40mg,Reduces stomach acid,95.00,true,"Pan 40, Pantocid 40"
+Pan 40,Alkem,Pantoprazole 40mg,GERD and acidity,89.00,true,"Pantop 40, Pantocid 40"
+Cetirizine 10,Cipla,Cetirizine Hydrochloride 10mg,Relieves allergy symptoms,18.00,true,Levocetirizine 5
+Levocetirizine 5,Cipla,Levocetirizine 5mg,Antihistamine for allergies,22.00,false,Cetirizine 10

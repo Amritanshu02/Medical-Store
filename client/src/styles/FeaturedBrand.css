@@ -1,0 +1,17 @@
+#featuredBrandMain {
+    margin: 2rem;
+}
+
+#featuredBrandMain h1 {
+    margin-bottom: 0.5rem;
+    color: rgb(65, 65, 65);
+}
+
+#featuredBrandMain h1 span {
+    color: red;
+}
+
+#featuredBrandMain p {
+    margin-bottom: 2rem;
+    color: gray;
+}

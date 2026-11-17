@@ -1,0 +1,14 @@
+#chooseCard {
+    display: flex;
+    margin-right: 10px;
+}
+
+#chooseCardImg {
+    object-fit: cover;
+}
+
+@media (max-width: 782px) and (min-width: 540px) {
+    #chooseCard {
+        flex-direction: column;
+    }
+}

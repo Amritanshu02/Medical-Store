@@ -1,0 +1,40 @@
+#featuredCardMain {
+    text-decoration: none;
+    color: black;
+}
+
+#featuredCardMainContainer {
+    width: 180px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+#featuredCardMainTop {
+    display: flex;
+    /* background-color: beige; */
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#featuredCardMainTop:hover {
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+}
+
+#featuredCardMainTop img {
+    height: 100%;
+    width: 100%;
+}
+
+#featuredCardMainBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 19px;
+}
+
+#featuredCardMainBottom p {
+    color: black;
+}

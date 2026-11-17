@@ -1,0 +1,12 @@
+#homeSection4Main {
+    margin: 2rem;
+}
+
+#homeSection4Main h1 {
+    margin-bottom: 2rem;
+    color: rgb(65, 65, 65);
+}
+
+#homeSection4Main h1 span {
+    color: red;
+}

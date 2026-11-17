@@ -1,0 +1,37 @@
+#displayCardMainLink {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
+
+#displayCardMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px !important;
+    height: 150px;
+    /* background-color: gray; */
+    padding: 15px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#displayCardMain:hover {
+    /* border: 1px solid gray; */
+    box-shadow: 5px 5px 10px gray;
+}
+
+#displayCardMain img {
+    width: 100px;
+    height: 80px;
+}
+
+#displayCardHeading {
+    margin-top: 10px;
+    font-weight: 550;
+}
+
+#displayCardOffer {
+    margin-top: 10px;
+    font-size: 12px;
+}
